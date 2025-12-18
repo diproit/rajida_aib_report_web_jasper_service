@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: rajida-report-service
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+upload:
+  dir: uploads
+
+# JasperReports Configuration
+jasper:
+  report:
+    ignore-missing-font: true
+
+logging:
+  level:
+    root: INFO
+    com.rajida.report: DEBUG

@@ -53,7 +53,7 @@ public class ReportController {
     public ResponseEntity<ApiResponse> listJrxmlFiles() {
         try {
             String[] files = reportService.getUploadedFiles();
-            return ResponseEntity.ok(new ApiResponse(true, "Files retrieved successfully", files));
+            return ResponseEntity.ok(new ApiResponse(true, "Files retrieved successfully updated", files));
         } catch (Exception e) {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
                     .body(new ApiResponse(false, "Failed to retrieve files: " + e.getMessage()));

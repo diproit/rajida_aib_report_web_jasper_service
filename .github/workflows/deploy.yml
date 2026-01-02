@@ -19,4 +19,4 @@ jobs:
                   script: |
                       cd /home/diproit/aib-report-web/rajida_aib_report_web_jasper_service
                       git pull origin main
-                      docker-compose up -d
+                      docker compose up -d
